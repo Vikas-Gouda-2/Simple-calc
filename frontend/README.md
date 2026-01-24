@@ -1,16 +1,98 @@
-https://github.com/Vikas-Gouda-2/Simple-calc.git# React + Vite
+# React + Flask Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful and colorful calculator web application built with React + Vite frontend and Flask backend.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✨ Beautiful gradient UI with Tailwind CSS
+- 🎨 Colorful and modern design
+- ⚡ Fast React + Vite frontend
+- 🐍 Flask backend for calculations
+- 🔄 Real-time calculation updates
+- 📱 Responsive design
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+Calc/
+├── frontend/          # React + Vite application
+│   ├── src/
+│   │   ├── App.jsx
+│   │   └── App.css
+│   └── package.json
+├── backend/           # Flask application
+│   ├── app.py
+│   ├── requirements.txt
+│   └── venv/
+└── README.md
+```
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (for frontend)
+- Python 3.8+ (for backend)
+- Homebrew (for macOS - optional)
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+```bash
+cd backend
+```
+
+2. Create and activate a virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the Flask server:
+```bash
+FLASK_APP=app.py flask run
+```
+
+The backend will run at `http://127.0.0.1:5000`
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+```bash
+cd frontend
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+The frontend will run at `http://localhost:5174`
+
+## Usage
+
+1. Start both the backend and frontend servers (see Getting Started)
+2. Open your browser to the frontend URL
+3. Use the calculator by clicking buttons
+4. Press `=` to calculate
+5. Use `⌫` to backspace and `C` to clear
+
+## Technologies Used
+
+- **Frontend**: React, Vite, Tailwind CSS
+- **Backend**: Flask, Flask-CORS
+- **Language**: JavaScript, Python
+
+## License
+
+MIT
